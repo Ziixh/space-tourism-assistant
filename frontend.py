@@ -1,6 +1,13 @@
 import streamlit as st
 import requests
 
+# Set the page configuration (title, icon, etc.)
+st.set_page_config(
+    page_title="Space Tourism Personal Assistant",  # Tab title
+    page_icon="🚀",  # Emoji or favicon for the tab
+    layout="wide"  # Optional: Use wide layout for better aesthetics
+)
+
 # Direct URL of the background image
 background_image = "https://image.lexica.art/full_webp/e6a67e16-d583-4c97-a685-a0c3a456cb5e"
 
