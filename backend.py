@@ -3,14 +3,18 @@ import requests
 import random
 from sklearn.linear_model import LinearRegression
 import numpy as np
+from dotenv import load_dotenv  # Import this
+import os
 
+# Load environment variables from .env file
+load_dotenv()
+
+# Initialize FastAPI app
 app = FastAPI()
 
-# NASA API Key
-NASA_API_KEY = "hqj3QWhu108i1UA6yXnilHjA0WlBCTuE8F0SMlgT"
-
-# OpenWeatherMap API Key
-OPENWEATHERMAP_API_KEY = "113d459265a0f8d169843e20e9d4fe94"
+# Load API keys from environment variables
+NASA_API_KEY = os.getenv("NASA_API_KEY")
+OPENWEATHERMAP_API_KEY = os.getenv("OPENWEATHERMAP_API_KEY")
 
 # Example itinerary data with tips
 example_itinerary = {

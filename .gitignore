@@ -1,12 +1,12 @@
+# Ignore environment variables
+.env
+
 # Ignore Python virtual environments
 venv/
 __pycache__/
 *.pyc
 
-# Ignore environment variables (if you have an .env file)
-.env
-
-# Ignore large media files (if not needed in the repository)
+# Ignore large media files
 *.mp4
 *.jpg
 *.gif
